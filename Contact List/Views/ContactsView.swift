@@ -8,13 +8,18 @@
 import SwiftUI
 
 struct ContactsView: View {
+    let persons: [Person]
+
     var body: some View {
-        Text("Contacts")
+        List(persons) { person in
+            Text(person.fullName)
+        }
+        .navigationTitle("Contact List")
     }
 }
 
 struct ContactsView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactsView()
+        ContactsView(persons: Person.generateContacts())
     }
 }

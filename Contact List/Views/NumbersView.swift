@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct NumbersView: View {
+    let persons: [Person]
+    
     var body: some View {
         Text("Numbers")
     }
@@ -15,6 +17,6 @@ struct NumbersView: View {
 
 struct NumbersView_Previews: PreviewProvider {
     static var previews: some View {
-        NumbersView()
+        NumbersView(persons: Person.generateContacts())
     }
 }
