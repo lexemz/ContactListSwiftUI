@@ -12,15 +12,22 @@ struct ContactInfoView: View {
 
     var body: some View {
         List {
-            Image(systemName: "person.fill")
-                .resizable()
-                .frame(width: 100, height: 100)
-
+            imageForRow
             MailAndNumberForPerson(person: person)
-            // TODO: MAKE ALAIGMENT FOR IMAGE
         }
         .listStyle(.plain)
         .navigationTitle("\(person.fullName)")
+    }
+    
+    private var imageForRow: some View {
+        HStack {
+            Spacer()
+            Image(systemName: "person.fill")
+                .resizable()
+                .frame(width: 100, height: 100)
+            Spacer()
+        }
+        .frame(height: 120)
     }
 }
 
