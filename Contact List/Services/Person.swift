@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct Person {
+struct Person: Identifiable {
+    var id: Int
     let name: String
     let surname: String
     let mail: String
@@ -29,10 +30,11 @@ struct Person {
         
         for iteration in 0..<maximumValidContacts {
             contacts.append(
-                Person(name: names[iteration],
-                        surname: surnames[iteration],
-                        mail: mails[iteration],
-                        number: nums[iteration])
+                Person(id: iteration,
+                       name: names[iteration],
+                       surname: surnames[iteration],
+                       mail: mails[iteration],
+                       number: nums[iteration])
             )
         }
         
