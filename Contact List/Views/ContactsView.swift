@@ -17,6 +17,7 @@ struct ContactsView: View {
                     Text(person.fullName)
                 }
             }
+            .listStyle(.plain)
             .navigationTitle("Contact List")
         }
     }
@@ -24,6 +25,6 @@ struct ContactsView: View {
 
 struct ContactsView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactsView(persons: Person.generateContacts())
+        ContactsView(persons: Person.generatePersons())
     }
 }

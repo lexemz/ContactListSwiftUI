@@ -14,16 +14,7 @@ struct NumbersView: View {
         NavigationView {
             List(persons) { person in
                 Section(header: Text("\(person.fullName)")) {
-                    HStack {
-                        Image(systemName: "phone.fill")
-                            .foregroundColor(.blue)
-                        Text(person.number)
-                    }
-                    HStack {
-                        Image(systemName: "envelope.fill")
-                            .foregroundColor(.blue)
-                        Text(person.mail)
-                    }
+                    MailAndNumberForPerson(person: person)
                 }
             }
             .navigationTitle("Numbers")
@@ -33,6 +24,6 @@ struct NumbersView: View {
 
 struct NumbersView_Previews: PreviewProvider {
     static var previews: some View {
-        NumbersView(persons: Person.generateContacts())
+        NumbersView(persons: Person.generatePersons())
     }
 }

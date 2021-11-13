@@ -15,16 +15,17 @@ struct ContactInfoView: View {
             Image(systemName: "person.fill")
                 .resizable()
                 .frame(width: 100, height: 100)
-            Text(person.number)
-            Text(person.mail)
+
+            MailAndNumberForPerson(person: person)
             // TODO: MAKE ALAIGMENT FOR IMAGE
         }
+        .listStyle(.plain)
         .navigationTitle("\(person.fullName)")
     }
 }
 
 struct ContactInfoView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactInfoView(person: Person(id: 1, name: "Leha", surname: "Marchenkov", mail: "aaa@gmai.com", number: "8-800-555-35-35"))
+        ContactInfoView(person: Person.generatePerson())
     }
 }

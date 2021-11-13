@@ -8,7 +8,7 @@
 import Foundation
 
 struct Person: Identifiable {
-    var id: Int
+    let id: Int
     let name: String
     let surname: String
     let mail: String
@@ -16,7 +16,7 @@ struct Person: Identifiable {
     
     var fullName: String { "\(name) \(surname)" }
     
-    static func generateContacts() -> [Person] {
+    static func generatePersons() -> [Person] {
         var contacts: [Person] = []
         
         let dm = DataManager.shared
@@ -41,4 +41,7 @@ struct Person: Identifiable {
         return contacts
     }
     
+    static func generatePerson() -> Person {
+        Person(id: 1, name: "Leha", surname: "Marchenkov", mail: "aaa@gmai.com", number: "8-800-555-35-35")
+    }
 }

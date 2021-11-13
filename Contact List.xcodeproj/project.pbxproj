@@ -16,6 +16,7 @@
 		784DD07127404A0600734D55 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784DD07027404A0600734D55 /* ContactsView.swift */; };
 		784DD07327404A1300734D55 /* NumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784DD07227404A1300734D55 /* NumbersView.swift */; };
 		784DD076274052B600734D55 /* ContactInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784DD075274052B600734D55 /* ContactInfoView.swift */; };
+		784DD07827405D0100734D55 /* MailAndNumberForPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784DD07727405D0100734D55 /* MailAndNumberForPerson.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		784DD07027404A0600734D55 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		784DD07227404A1300734D55 /* NumbersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersView.swift; sourceTree = "<group>"; };
 		784DD075274052B600734D55 /* ContactInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfoView.swift; sourceTree = "<group>"; };
+		784DD07727405D0100734D55 /* MailAndNumberForPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailAndNumberForPerson.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			children = (
 				784DD05C2740460500734D55 /* Contact_ListApp.swift */,
 				784DD07427404AF500734D55 /* Views */,
+				784DD07927405E9300734D55 /* Subviews */,
 				784DD06E2740499500734D55 /* Managers */,
 				784DD06F2740499C00734D55 /* Services */,
 				784DD0602740460700734D55 /* Assets.xcassets */,
@@ -104,6 +107,14 @@
 				784DD07227404A1300734D55 /* NumbersView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		784DD07927405E9300734D55 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				784DD07727405D0100734D55 /* MailAndNumberForPerson.swift */,
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				784DD07827405D0100734D55 /* MailAndNumberForPerson.swift in Sources */,
 				784DD06D2740484700734D55 /* Person.swift in Sources */,
 				784DD076274052B600734D55 /* ContactInfoView.swift in Sources */,
 				784DD05F2740460500734D55 /* ContentView.swift in Sources */,
