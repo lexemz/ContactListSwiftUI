@@ -15,6 +15,7 @@
 		784DD06D2740484700734D55 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784DD06C2740484700734D55 /* Person.swift */; };
 		784DD07127404A0600734D55 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784DD07027404A0600734D55 /* ContactsView.swift */; };
 		784DD07327404A1300734D55 /* NumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784DD07227404A1300734D55 /* NumbersView.swift */; };
+		784DD076274052B600734D55 /* ContactInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784DD075274052B600734D55 /* ContactInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		784DD06C2740484700734D55 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		784DD07027404A0600734D55 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		784DD07227404A1300734D55 /* NumbersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersView.swift; sourceTree = "<group>"; };
+		784DD075274052B600734D55 /* ContactInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				784DD05E2740460500734D55 /* ContentView.swift */,
 				784DD07027404A0600734D55 /* ContactsView.swift */,
+				784DD075274052B600734D55 /* ContactInfoView.swift */,
 				784DD07227404A1300734D55 /* NumbersView.swift */,
 			);
 			path = Views;
@@ -174,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				784DD06D2740484700734D55 /* Person.swift in Sources */,
+				784DD076274052B600734D55 /* ContactInfoView.swift in Sources */,
 				784DD05F2740460500734D55 /* ContentView.swift in Sources */,
 				784DD05D2740460500734D55 /* Contact_ListApp.swift in Sources */,
 				784DD07327404A1300734D55 /* NumbersView.swift in Sources */,
