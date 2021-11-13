@@ -11,6 +11,8 @@
 		784DD05F2740460500734D55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784DD05E2740460500734D55 /* ContentView.swift */; };
 		784DD0612740460700734D55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 784DD0602740460700734D55 /* Assets.xcassets */; };
 		784DD0642740460700734D55 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 784DD0632740460700734D55 /* Preview Assets.xcassets */; };
+		784DD06B2740472300734D55 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784DD06A2740472300734D55 /* DataManager.swift */; };
+		784DD06D2740484700734D55 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784DD06C2740484700734D55 /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		784DD05E2740460500734D55 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		784DD0602740460700734D55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		784DD0632740460700734D55 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		784DD06A2740472300734D55 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		784DD06C2740484700734D55 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 				784DD05E2740460500734D55 /* ContentView.swift */,
 				784DD0602740460700734D55 /* Assets.xcassets */,
 				784DD0622740460700734D55 /* Preview Content */,
+				784DD06E2740499500734D55 /* Managers */,
+				784DD06F2740499C00734D55 /* Services */,
 			);
 			path = "Contact List";
 			sourceTree = "<group>";
@@ -65,6 +71,22 @@
 				784DD0632740460700734D55 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		784DD06E2740499500734D55 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				784DD06A2740472300734D55 /* DataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		784DD06F2740499C00734D55 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				784DD06C2740484700734D55 /* Contact.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				784DD06D2740484700734D55 /* Contact.swift in Sources */,
 				784DD05F2740460500734D55 /* ContentView.swift in Sources */,
 				784DD05D2740460500734D55 /* Contact_ListApp.swift in Sources */,
+				784DD06B2740472300734D55 /* DataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
