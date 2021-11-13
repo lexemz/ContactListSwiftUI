@@ -13,12 +13,12 @@ struct MailAndNumberForPerson: View {
     var body: some View {
         Group {
             HStack {
-                Image(systemName: "phone.fill")
+                Image(systemName: "phone")
                     .foregroundColor(.blue)
                 Text(person.number)
             }
             HStack {
-                Image(systemName: "envelope.fill")
+                Image(systemName: "envelope")
                     .foregroundColor(.blue)
                 Text(person.mail)
             }
