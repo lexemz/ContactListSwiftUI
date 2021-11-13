@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContactInfoView: View {
     let person: Person
-    
+
     var body: some View {
         List {
             Image(systemName: "person.fill")

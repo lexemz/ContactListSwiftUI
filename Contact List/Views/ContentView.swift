@@ -11,19 +11,17 @@ struct ContentView: View {
     let persons = Person.generateContacts()
 
     var body: some View {
-        NavigationView {
-            TabView {
-                ContactsView(persons: persons)
-                    .tabItem {
-                        Image(systemName: "person.fill")
-                        Text("Contacts")
-                    }
-                NumbersView(persons: persons)
-                    .tabItem {
-                        Image(systemName: "phone.fill")
-                        Text("Numbers")
-                    }
-            }
+        TabView {
+            ContactsView(persons: persons)
+                .tabItem {
+                    Image(systemName: "person.fill")
+                    Text("Contacts")
+                }
+            NumbersView(persons: persons)
+                .tabItem {
+                    Image(systemName: "phone.fill")
+                    Text("Numbers")
+                }
         }
     }
 }

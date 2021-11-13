@@ -11,7 +11,23 @@ struct NumbersView: View {
     let persons: [Person]
     
     var body: some View {
-        Text("Numbers")
+        NavigationView {
+            List(persons) { person in
+                Section(header: Text("\(person.fullName)")) {
+                    HStack {
+                        Image(systemName: "phone.fill")
+                            .foregroundColor(.blue)
+                        Text(person.number)
+                    }
+                    HStack {
+                        Image(systemName: "envelope.fill")
+                            .foregroundColor(.blue)
+                        Text(person.mail)
+                    }
+                }
+            }
+            .navigationTitle("Numbers")
+        }
     }
 }
 
