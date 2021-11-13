@@ -7,14 +7,16 @@
 
 import Foundation
 
-struct Contact {
+struct Person {
     let name: String
     let surname: String
     let mail: String
     let number: String
     
-    static func generateContacts() -> [Contact] {
-        var contacts: [Contact] = []
+    var fullName: String { "\(name) \(surname)" }
+    
+    static func generateContacts() -> [Person] {
+        var contacts: [Person] = []
         
         let dm = DataManager.shared
         
@@ -25,9 +27,9 @@ struct Contact {
         
         let maximumValidContacts = min(names.count, surnames.count, nums.count, mails.count)
         
-        for iteration in 0...maximumValidContacts {
+        for iteration in 0..<maximumValidContacts {
             contacts.append(
-                Contact(name: names[iteration],
+                Person(name: names[iteration],
                         surname: surnames[iteration],
                         mail: mails[iteration],
                         number: nums[iteration])
@@ -36,4 +38,5 @@ struct Contact {
         
         return contacts
     }
+    
 }
